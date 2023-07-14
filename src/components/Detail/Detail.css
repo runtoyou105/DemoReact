@@ -1,22 +1,124 @@
 .items{
-   margin:0;
-
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    
 }
-.infor{
-
-}
-.infor table{
-    border: 3px black;
-    display: block;
-}
-.Card{
-    display: block;
+.div-left{
+    float: left;
+    width: 25%;
+    clear: left;
+    padding-left: 20px;
+    display: grid;
     position: relative;
 
 }
+.div-right{
+    padding-right: 10px;
+    width: 65%;
+    float:right;
+    clear: right;
+    display: grid;
+    position: relative;
+}
+h4{
+
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding:10px 0px;
+    box-sizing: border-box;
+}
+p{
+    text-align: left;
+    font-family:"Montserrat",sans-serif ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
 .table{
-    position: relative;
-    border: 3px solid black;
+    border: 1px solid black;
+    align-items: center;
+
+}
+td{
+    border: 1px solid black;
+    padding: 5px;
+    width: 13%;
+    height: 20px;
+    color: black;
+   
+    
+}
+
+.behind{
     display: block;
-    text-align: center;
+    position:inherit;
+}
+
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    
+}
+
+.column {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    line-height: 1;
+    text-align: left;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.box {
+    background-color: white;
+    padding: 2px;
+}
+.infor-left{
+    float: left;
+    width: 45%;
+    clear: left;
+    padding-left: 20px;
+    display: grid;
+    position: relative;
+}
+.infor-right{
+
+    padding-right: 10px;
+    width: 45%;
+    float:right;
+    clear: right;
+    display: grid;
+    position: relative;
+
+}
+
+@media (max-width: 768px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .column {
+        padding: 0;
+    }
+    .div-right{
+        display: table-cell;
+        width: auto;
+        padding-left: 10px;
+    }
 }
