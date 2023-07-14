@@ -1,0 +1,22 @@
+.items{
+   margin:0;
+
+}
+.infor{
+
+}
+.infor table{
+    border: 3px black;
+    display: block;
+}
+.Card{
+    display: block;
+    position: relative;
+
+}
+.table{
+    position: relative;
+    border: 3px solid black;
+    display: block;
+    text-align: center;
+}

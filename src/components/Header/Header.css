@@ -1,0 +1,29 @@
+.header
+{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 4rem;
+    color: #444;
+    position: relative;
+}
+
+.header::after
+{
+    
+}
+
+.header > i
+{
+    display: inline-block;
+    height: .6em;
+    width: .6em;
+    background-image: url( '../../img/pokeball.svg' );
+    background-repeat: no-repeat;
+}
+h3.header {
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: auto;
+}
